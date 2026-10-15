@@ -91,15 +91,6 @@
       "correo": "luisd@gmail.com",
       "rol": "administrativo",
       "sucursalId": 2
-    },
-    {
-      "id": 8,
-      "nombre": "Axel Escobedo",
-      "puesto": "Asesor",
-      "telefono": "4491094857",
-      "correo": "azel@gmail.com",
-      "rol": "gerente",
-      "sucursalId": 3
     }
   ],
   "clientes": [
@@ -144,14 +135,14 @@
       "montoAcumulado": 769999
     },
     {
-      "id": 5,
-      "nombre": "Fernanda Escobedo Hernandez",
-      "telefono": "4491065196",
-      "correo": "fernan@gmail.com",
-      "ciudad": "Guadalajara",
+      "id": 6,
+      "nombre": "Diego Alexis Garcia",
+      "telefono": "44934667",
+      "correo": "diegoa@gmail.com",
+      "ciudad": "Aguascalientes, Aguascalientes",
       "esAmigoGerente": true,
-      "comprasRealizadas": 2,
-      "montoAcumulado": 815805
+      "comprasRealizadas": 1,
+      "montoAcumulado": 549450
     }
   ],
   "carros": [
@@ -268,12 +259,12 @@
       "color": "Verde",
       "precioBase": 555000,
       "precioZona": 610500,
-      "descuentoAplicado": 0,
-      "precioFinal": 610500,
-      "estado": "disponible",
+      "descuentoAplicado": 10,
+      "precioFinal": 549450,
+      "estado": "vendido",
       "sucursalId": 3,
-      "vendedorId": null,
-      "clienteId": null
+      "vendedorId": 5,
+      "clienteId": 6
     }
   ]
 }
