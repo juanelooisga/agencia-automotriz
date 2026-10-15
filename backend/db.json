@@ -1,0 +1,279 @@
+{
+  "sucursales": [
+    {
+      "id": 1,
+      "nombre": "Sucursal Sur",
+      "direccion": "Av. Madero 505",
+      "telefono": "4491112233",
+      "ciudad": "Aguascalientes",
+      "zona": "premium",
+      "factorPrecio": 4.4
+    },
+    {
+      "id": 2,
+      "nombre": "Sucursal Altaria",
+      "direccion": "Salida a Zacatecas 133",
+      "telefono": "4491095191",
+      "ciudad": "Aguascalientes",
+      "zona": "premium",
+      "factorPrecio": 1.5
+    },
+    {
+      "id": 3,
+      "nombre": "Sucursal Galerias",
+      "direccion": "Avenida Lopez Mateos 256",
+      "telefono": "44956825",
+      "ciudad": "Aguascalientes",
+      "zona": "normal",
+      "factorPrecio": 1.1
+    },
+    {
+      "id": 4,
+      "nombre": "Sucursal Norte",
+      "direccion": "Av. Universidad 500",
+      "telefono": "4491234567",
+      "ciudad": "Aguascalientes",
+      "zona": "premium",
+      "factorPrecio": 1.15
+    }
+  ],
+  "personal": [
+    {
+      "id": 1,
+      "nombre": "Marcos Ruiz",
+      "puesto": "Gerente General",
+      "telefono": "4491111111",
+      "correo": "gerente@agencia.com",
+      "rol": "gerente",
+      "sucursalId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Lopez",
+      "puesto": "Ejecutiva de Ventas",
+      "telefono": "4492222222",
+      "correo": "ventas@agencia.com",
+      "rol": "ventas",
+      "sucursalId": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Diego Alexis Gonzales Garcia",
+      "puesto": "Gerente de soporte",
+      "telefono": "449566587",
+      "correo": "diego666@gmail.com",
+      "rol": "gerente",
+      "sucursalId": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Juanelo Garcia Lopez",
+      "puesto": "Vendedor principal",
+      "telefono": "449555872",
+      "correo": "nelo21@gmail.com",
+      "rol": "ventas",
+      "sucursalId": 1
+    },
+    {
+      "id": 5,
+      "nombre": "Carlos Ventas",
+      "puesto": "Asesor Comercial",
+      "telefono": "4498887777",
+      "correo": "carlos@agencia.com",
+      "rol": "ventas",
+      "sucursalId": 1
+    },
+    {
+      "id": 6,
+      "nombre": "Luis Dominguez",
+      "puesto": "Auxiliar",
+      "telefono": "4491095161",
+      "correo": "luisd@gmail.com",
+      "rol": "administrativo",
+      "sucursalId": 2
+    },
+    {
+      "id": 8,
+      "nombre": "Axel Escobedo",
+      "puesto": "Asesor",
+      "telefono": "4491094857",
+      "correo": "azel@gmail.com",
+      "rol": "gerente",
+      "sucursalId": 3
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Jaziel Cliente",
+      "telefono": "4493333333",
+      "correo": "jaziel@cliente.com",
+      "ciudad": "Aguascalientes",
+      "esAmigoGerente": true,
+      "comprasRealizadas": 5,
+      "montoAcumulado": 2405750
+    },
+    {
+      "id": 2,
+      "nombre": "Manuel Lopez",
+      "telefono": "449523215",
+      "correo": "manlo@gmail.com",
+      "ciudad": "Zacatecas",
+      "esAmigoGerente": true,
+      "comprasRealizadas": 1,
+      "montoAcumulado": 567000
+    },
+    {
+      "id": 3,
+      "nombre": "Cliente Premium",
+      "telefono": "4494445555",
+      "correo": "cliente@correo.com",
+      "ciudad": "Aguascalientes",
+      "esAmigoGerente": true,
+      "comprasRealizadas": 0,
+      "montoAcumulado": 0
+    },
+    {
+      "id": 4,
+      "nombre": "Fernando Escobar",
+      "telefono": "449127895",
+      "correo": "feres@gmail.com",
+      "ciudad": "Aguascalientes",
+      "esAmigoGerente": false,
+      "comprasRealizadas": 1,
+      "montoAcumulado": 769999
+    },
+    {
+      "id": 5,
+      "nombre": "Fernanda Escobedo Hernandez",
+      "telefono": "4491065196",
+      "correo": "fernan@gmail.com",
+      "ciudad": "Guadalajara",
+      "esAmigoGerente": true,
+      "comprasRealizadas": 2,
+      "montoAcumulado": 815805
+    }
+  ],
+  "carros": [
+    {
+      "id": 1,
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "anio": 2024,
+      "color": "Blanco",
+      "precioBase": 350000,
+      "precioZona": 392000,
+      "descuentoAplicado": 10,
+      "precioFinal": 352800,
+      "estado": "vendido",
+      "sucursalId": 1,
+      "vendedorId": 2,
+      "clienteId": 1
+    },
+    {
+      "id": 2,
+      "marca": "Chevrolet",
+      "modelo": "Aveo",
+      "anio": 2025,
+      "color": "Verde",
+      "precioBase": 420000,
+      "precioZona": 630000,
+      "descuentoAplicado": 10,
+      "precioFinal": 567000,
+      "estado": "vendido",
+      "sucursalId": 2,
+      "vendedorId": 4,
+      "clienteId": 2
+    },
+    {
+      "id": 3,
+      "marca": "Mazda",
+      "modelo": "CX5",
+      "anio": 2025,
+      "color": "Rojo",
+      "precioBase": 500000,
+      "precioZona": 560000,
+      "descuentoAplicado": 10,
+      "precioFinal": 504000,
+      "estado": "vendido",
+      "sucursalId": 1,
+      "vendedorId": 5,
+      "clienteId": 1
+    },
+    {
+      "id": 4,
+      "marca": "Nissan",
+      "modelo": "Versa",
+      "anio": 2000,
+      "color": "azul",
+      "precioBase": 777000,
+      "precioZona": 1165500,
+      "descuentoAplicado": 10,
+      "precioFinal": 1048950,
+      "estado": "vendido",
+      "sucursalId": 2,
+      "vendedorId": 5,
+      "clienteId": 1
+    },
+    {
+      "id": 5,
+      "marca": "Toyota",
+      "modelo": "Hylux",
+      "anio": 2025,
+      "color": "Blanco",
+      "precioBase": 699999,
+      "precioZona": 769999,
+      "descuentoAplicado": 0,
+      "precioFinal": 769999,
+      "estado": "vendido",
+      "sucursalId": 3,
+      "vendedorId": 4,
+      "clienteId": 4
+    },
+    {
+      "id": 6,
+      "marca": "Nissan",
+      "modelo": "Tsuru",
+      "anio": 1995,
+      "color": "Negro",
+      "precioBase": 45000,
+      "precioZona": 51750,
+      "descuentoAplicado": 10,
+      "precioFinal": 46575,
+      "estado": "vendido",
+      "sucursalId": 4,
+      "vendedorId": 5,
+      "clienteId": 5
+    },
+    {
+      "id": 7,
+      "marca": "Nissan",
+      "modelo": "Sentra",
+      "anio": 2026,
+      "color": "Azul",
+      "precioBase": 777000,
+      "precioZona": 854700,
+      "descuentoAplicado": 10,
+      "precioFinal": 769230,
+      "estado": "vendido",
+      "sucursalId": 3,
+      "vendedorId": 4,
+      "clienteId": 5
+    },
+    {
+      "id": 8,
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "anio": 2026,
+      "color": "Verde",
+      "precioBase": 555000,
+      "precioZona": 610500,
+      "descuentoAplicado": 0,
+      "precioFinal": 610500,
+      "estado": "disponible",
+      "sucursalId": 3,
+      "vendedorId": null,
+      "clienteId": null
+    }
+  ]
+}
