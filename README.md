@@ -347,7 +347,7 @@ Próximamente se agregará una versión desplegada en internet para permitir pro
 
 ## Autor
 
-Juanelo
+Juan Isais Garcia
 
 GitHub: [@juanelooisga](https://github.com/juanelooisga)
 
