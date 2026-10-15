@@ -17,9 +17,9 @@ app.use('/api/personal', personalRoutes);
 app.use('/api/clientes', clienteRoutes);
 app.use('/api/carros', carroRoutes);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Servidor activo en http://localhost:${PORT}`);
+  console.log(`Servidor activo en el puerto ${PORT}`);
   console.log('Base de datos: db.json');
 });
