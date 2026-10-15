@@ -1,3 +1,21 @@
-"scripts": {
-  "start": "node server.js"
+{
+  "name": "mi_api_agencia",
+  "version": "1.0.0",
+  "description": "API REST para sistema web administrativo de agencia de carros",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "crud",
+    "agencia"
+  ],
+  "author": "Juan Isais Garcia ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
