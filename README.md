@@ -376,7 +376,7 @@ Utilizar únicamente datos ficticios. La demo permite modificar registros sin au
 
 El almacenamiento continúa en `backend/db.json`. Sin un disco persistente, los cambios se pierden cuando Render reinicia o vuelve a desplegar el servicio, que vuelve a cargar los datos incluidos en GitHub. Esta demo no ofrece almacenamiento permanente ni está destinada a operar una agencia real.
 
-El enlace público se agregará después de verificar el despliegue.
+Demo en vivo: [Abrir Agencia AutoPro](https://agencia-autopro-demo.onrender.com/).
 
 ---
 
