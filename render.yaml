@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: agencia-autopro-demo
+    runtime: node
+    plan: free
+    branch: codex/render-demo
+    buildCommand: npm --prefix backend ci --omit=dev && npm --prefix frontend ci --include=dev && npm --prefix frontend run build
+    startCommand: npm --prefix backend start
+    healthCheckPath: /api/sucursales

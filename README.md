@@ -339,9 +339,44 @@ Durante el desarrollo del proyecto se trabajaron conceptos como:
 
 ## Demo
 
-Actualmente el proyecto puede ejecutarse de manera local.
+Esta rama (`codex/render-demo`) prepara una demo de portafolio para Render. La rama `main` conserva la versión original. Las rutas de la API y las reglas de negocio no se modifican.
 
-Próximamente se agregará una versión desplegada en internet para permitir probar la aplicación directamente desde el navegador.
+### Probar la versión compilada en PowerShell
+
+Desde la raíz del proyecto, ejecutar cada comando por separado:
+
+```powershell
+npm --prefix backend ci --omit=dev
+npm --prefix frontend ci --include=dev
+npm --prefix frontend run build
+$env:PORT = "3001"
+npm --prefix backend start
+```
+
+Abrir `http://localhost:3001`. Express sirve la interfaz compilada y la API desde el mismo origen. Esta prueba no necesita iniciar el servidor de desarrollo de Vite.
+
+### Publicar en Render
+
+El archivo `render.yaml` contiene la configuración para crear un Blueprint desde esta rama. También puede crearse un Web Service manualmente con estos valores:
+
+- Repositorio: `juanelooisga/agencia-automotriz`.
+- Rama: `codex/render-demo`.
+- Directorio raíz: dejar vacío.
+- Entorno: Node.
+- Build Command: `npm --prefix backend ci --omit=dev && npm --prefix frontend ci --include=dev && npm --prefix frontend run build`.
+- Start Command: `npm --prefix backend start`.
+- Health Check Path: `/api/sucursales`.
+- Plan: Free.
+
+La versión de Node está fijada en `.node-version`. El servidor utiliza el puerto proporcionado por Render y escucha en `0.0.0.0`.
+
+### Datos de la demo
+
+Utilizar únicamente datos ficticios. La demo permite modificar registros sin autenticación y todos los visitantes comparten los mismos datos.
+
+El almacenamiento continúa en `backend/db.json`. Sin un disco persistente, los cambios se pierden cuando Render reinicia o vuelve a desplegar el servicio, que vuelve a cargar los datos incluidos en GitHub. Esta demo no ofrece almacenamiento permanente ni está destinada a operar una agencia real.
+
+El enlace público se agregará después de verificar el despliegue.
 
 ---
 
